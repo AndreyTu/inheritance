@@ -1,8 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class TaskTest {
     @Test
     public void shouldSimpleTasksMatches() {
@@ -25,9 +23,4 @@ class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
-    @Test
-
-
-
 }

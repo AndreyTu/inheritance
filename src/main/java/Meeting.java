@@ -1,10 +1,7 @@
 public class Meeting extends Task {
-
     protected String topic;
     protected String project;
-
     protected String start;
-
 
     public String getTopic() {
         return topic;
@@ -31,6 +28,9 @@ public class Meeting extends Task {
             return true;
         }
         if (project.contains(query)) {
+            return true;
+        }
+        if (start.contains(query)) {
             return true;
         }
         return false;

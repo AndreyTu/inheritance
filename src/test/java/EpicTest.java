@@ -6,11 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class EpicTest {
 
 
+    @Test
     public void shouldEpicTasksMatches() {
         SimpleTask simpleTask = new SimpleTask(5, "Купить кетчуп");
 
 
-        boolean actual = simpleTask.matches("Купить");
+        boolean actual = simpleTask.matches("кетчуп");
         boolean expected = true;
 
         Assertions.assertEquals(expected, actual);
